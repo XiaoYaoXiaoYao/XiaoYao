@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style>
+        body{
+            background: url("../img/aaa.jpg") no-repeat center;
+        }
+
+        .div1{
+            border:#EEEEEE;
+            width: 1000px;
+            height: 500px;
+            margin: auto ;
+            margin-top: 80px;
+
+
+        }
+
+        .div-left{
+            margin-left: 50px;
+            margin-top: 35px;
+            float: left;
+
+        }
+
+        .div-center{
+            margin-left: 150px;
+            margin-top: 35px;
+            height: 400px;
+            float: left;
+        }
+        .div-right{
+            margin-top: 35px;
+            margin-right: 15px;
+            float: right;
+
+        }
+        .td_left{
+            height: 45px;
+            padding-left: 30px;
+        }
+        .td_right{
+            padding-right: 50px;
+        }
+        #username{
+            width: 251px;
+            height: 32px;
+            border: 1px solid #EEEEEE;
+            /*
+            设置边框为圆角
+            */
+            border-radius:5px ;
+        }
+        #username{
+            width: 251px;
+            height: 32px;
+            border: 1px solid #EEEEEE;
+            /*
+            设置边框为圆角
+            */
+            border-radius:5px ;
+        }
+        #password{
+            width: 251px;
+            height: 32px;
+            border: 1px solid #EEEEEE;
+            /*
+            设置边框为圆角
+            */
+            border-radius:5px ;
+        }
+        #phone{
+            width: 251px;
+            height: 32px;
+            border: 1px solid #EEEEEE;
+            /*
+            设置边框为圆角
+            */
+            border-radius:5px ;
+        }
+
+        #subBtn{
+            width: 150px;
+            height: 40px;
+            background-color: cornsilk;
+            border: 1px solid cornsilk;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div class="div1">
+<div class="div-left">
+    <p style="color: chocolate">新用户注册</p>
+    <p style="color: darkgray">USER REGISTER</p>
+
+</div>
+<div class="div-center">
+
+    <form action="#" method="post">
+        <table   cellspacing="0" cellpadding="10">
+            <tr>
+                <td class="td_left">用户名</td>
+                <td class="td_right">
+                    <input type="text" name="username" id="username" placeholder="请输入账号">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="td_left">密&nbsp;码&nbsp;&nbsp;&nbsp;</td>
+                <td class="td_right">
+                    <input type="password" name="password" id="password" placeholder="请输入密码">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">手机号</td>
+                <td class="td_right">
+                    <input type="text" name="phone" id="phone" placeholder="请输入手机号">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">性别</td>
+                <td class="td_right">
+                    <input type="radio" name="gender" id="gender" value="男" checked>男
+                    <input type="radio" name="gender" value="女" >女
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">爱好&nbsp;&nbsp;</td>
+                <td class="td_right">
+                    <input type="checkbox" id="shopping" value="shopping">购物
+                    <input type="checkbox" value="java" checked>JAVA<input type="checkbox" value="game">游戏
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input id="subBtn" type="submit" value="提交" >
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+<div class="div-right">
+<p style="color:chocolate">已有账号?<a href="#"style="color: bisque" >立即登录</a></p>
+</div>
+</div>
+</body>
+</html>
