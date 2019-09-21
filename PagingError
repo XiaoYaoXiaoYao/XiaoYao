@@ -1,0 +1,13 @@
+今天犯了一个错误,一直找bug找了很久,今天要好好记一下
+
+分页的时候  :
+              parameterList.add("%"+ value +"% ");
+              
+              就是这个  ---->   "% "  这个%后面加了一个空格,数据一直添加不到页面上去
+              
+              
+              
+       这边写一个完整的分页语句:  
+               在java中 String sql=" select  *  from  user  where  1 = 1 and  username like %aaa% and password like %123% limit 0,2";
+               
+               在MySQL中  select  *  from  user  where  1 = 1 and  username like '%aaa%' and password like '%123%' limit 0,2;
